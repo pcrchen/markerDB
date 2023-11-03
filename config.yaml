@@ -1,6 +1,6 @@
 # Pipeline configuration
 
-# --- Organsim to restrict search to
+# --- Organism to restrict search to
 organism: "Haemonchus"
 
 # ---- Marker gene to search.  Currently ITS2 and 18S are supported
@@ -9,13 +9,13 @@ marker: "ITS2"
 # --- Output directory
 out_directory: "test"
 
-# --- database version
+# --- Database version
 version: 0.0.1
 
-# --- database title
+# --- Database title
 title: "Test"
 
-# --- Marker specific paramters
+# --- Marker specific parameters
 # set according to the expected length of the marker you are searching
 # Recommended values:
 # ITS2: max_width: 700 and min_width: 100
@@ -23,13 +23,13 @@ title: "Test"
 max_width: 700
 min_width: 100
 
-# --- should untrimmed sequences be returned.  Valid only for ITS2
+# --- Should untrimmed sequences be returned.  Valid only for ITS2
 return_untrimmed: TRUE
+
+# --- Download NCBI taxonomy database
+download_taxdb: TRUE
+delete_taxdb: FALSE
 
 # --- General
 ncbi_api: ""
-threads: 10 
-
-
-
-
+threads: 10

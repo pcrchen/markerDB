@@ -58,6 +58,10 @@ Edit the `config.yaml` file with a file editor of your choice and adjust the fol
 
 * *threads*: The number of CPU threads that Snakemake can use to run jobs.
 
+* *download_taxdb*: If TRUE, downloads NCBI taxonomy database (~2.5GB) for fetching sequence taxonomy. This minimizes random HTTP error arising when querying large number of taxonomy to NCBI server directly.
+
+* *delete_taxdb*: If TRUE, deletes the downloaded taxonomy database once taxonomy is fetched.
+
 ### Run it
 
 Now run it with 2 threads:

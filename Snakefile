@@ -19,6 +19,8 @@ rule sequence_search:
     output:
         taxa = "{outdir}/raw/raw_taxa.tsv".format(outdir = outdir),
         seqs = "{outdir}/raw/raw_seqs.fasta".format(outdir = outdir)
+    params:
+        taxdb_cache = "taxdb"
     conda: 
         "envs/sequence_search.yaml"
     script:
